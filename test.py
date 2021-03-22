@@ -1,7 +1,7 @@
 from requests import get, post, put, delete
 
 print(post('http://localhost:5000/api/user',
-           json={'id': 4,
+           json={'id': 2,
                  'surname': 'Sokolov',
                  'name': 'Azya_Gay',
                  'age': 17,
@@ -10,7 +10,7 @@ print(post('http://localhost:5000/api/user',
                  'address': '-',
                  'email': 'AzyaDr@yandex.ru',
                  'hashed_password': 'OI#@RIU@#HIRNw4fgknwerpgjn',
-                 'city_from': 'Kostroma'
+                 'city_from': 'Praga'
                  }).json())
 
-print(get('http://localhost:5000/api/user/4').json())
+print(get('http://localhost:5000/api/user/2').json())
